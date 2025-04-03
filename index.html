@@ -62,11 +62,15 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-  <style>
-  #ytfvfvetlis81743675049474 { display: none !important; }
-  .tawk-branding { display: none !important; }
-  .tawk-powered-by { display: none !important; }
-</style>
+  <script>
+  var removeBranding = setInterval(function () {
+    let brandingDiv = document.querySelector('[href*="tawk.to/?utm_source"]'); 
+    if (brandingDiv) {
+      brandingDiv.parentElement.style.display = "none"; // Hide the whole parent div
+      clearInterval(removeBranding); // Stop checking once removed
+    }
+  }, 500); // Check every 500ms
+</script>
 
 
 </head>
