@@ -1,0 +1,56 @@
+
+.about_section {
+    padding: 60px 0;
+}
+.img-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+.detail-box {
+    padding: 20px;
+}
+.heading_container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+.mission_section, .choose_us_section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+.mission_section h3, .choose_us_section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.choose_us_points {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.point {
+    font-size: 16px;
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border-left: 4px solid #007bff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+.point span {
+    font-weight: bold;
+}
+.btn-primary {
+    margin-top: 15px;
+    background: #007bff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background: #0056b3;
+}
