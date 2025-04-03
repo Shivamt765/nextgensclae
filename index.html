@@ -62,16 +62,15 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-  <script>
+<script>
   var removeBranding = setInterval(function () {
-    let brandingDiv = document.querySelector('[href*="tawk.to/?utm_source"]'); 
+    let brandingDiv = document.querySelector('.tawk-text-center'); 
     if (brandingDiv) {
-      brandingDiv.parentElement.style.display = "none"; // Hide the whole parent div
+      brandingDiv.style.display = "none"; // Hide the branding div
       clearInterval(removeBranding); // Stop checking once removed
     }
   }, 500); // Check every 500ms
 </script>
-
 
 </head>
 <body>
