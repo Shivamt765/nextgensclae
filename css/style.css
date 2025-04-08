@@ -405,6 +405,57 @@ a:focus {
 .about_section .detail-box a:hover {
   background-color: #e0cd61;
 }
+/* Our Partners Start */
+
+.partners-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.partners-section h2 {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.partners-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partner {
+  flex: 1 1 20%;
+  max-width: 20%;
+  padding: 10px;
+}
+
+.partner img {
+  width: 80%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.partner img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .partner {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
 
 .service_section {
   background-color: #041858;
